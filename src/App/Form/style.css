@@ -1,0 +1,50 @@
+.exchange {
+    background-color: hsl(180, 100%, 97%);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.exchange__template {
+    background-color: hsl(180, 100%, 97%);
+    max-width: 400px;
+    border-radius: 30px;
+    margin: 10px auto;
+}
+
+.exchange__header {
+    border: 1px solid #222;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: hsl(180, 100%, 85%);
+}
+
+.exchange__currency {
+    margin: 10 px;
+}
+
+.exchange__text {
+    display: block;
+    margin: 5px;
+}
+
+.exchange__text--exchange {
+    font-size: x-small;
+}
+
+.exchange__window {
+    text-align: left;
+    width: 100%;
+}
+
+.exchange__button {
+    margin-left: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: hsl(180, 100%, 85%);
+}
+
+.exchange__button:hover {
+    background-color: hsl(180, 100%, 40%);
+}
