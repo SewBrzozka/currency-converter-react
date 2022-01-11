@@ -1,50 +1,42 @@
-.exchange {
-    background-color: hsl(180, 100%, 97%);
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 30px;
+
+.form__label {
+    display: grid;
+    grid-template-columns: auto 180px;
+    gap: 20px;
+    padding-top: 10px;
 }
 
-.exchange__template {
-    background-color: hsl(180, 100%, 97%);
-    max-width: 400px;
-    border-radius: 30px;
-    margin: 10px auto;
+@media (max-width: 767px) {
+    .form__label {
+        grid-template-columns: auto 160px;
+    }
 }
 
-.exchange__header {
-    border: 1px solid #222;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: hsl(180, 100%, 85%);
+.form__result {
+    text-align: center;
+    font-size: x-large;
 }
 
-.exchange__currency {
-    margin: 10 px;
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-.exchange__text {
-    display: block;
-    margin: 5px;
+.button__specification {
+    background-color: teal;
+    padding: 15px 80px;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    margin: 15px;
+    color: #eee;
 }
 
-.exchange__text--exchange {
-    font-size: x-small;
+.button__specification:hover {
+    background-color: hsl(180, 100%, 30%);
 }
-
-.exchange__window {
-    text-align: left;
-    width: 100%;
-}
-
-.exchange__button {
-    margin-left: 100px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: hsl(180, 100%, 85%);
-}
-
-.exchange__button:hover {
-    background-color: hsl(180, 100%, 40%);
+    
+.button__specification:active {
+    background-color: hsl(180, 100%, 35%);
 }

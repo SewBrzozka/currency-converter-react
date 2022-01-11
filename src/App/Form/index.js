@@ -13,48 +13,43 @@ export const Form = ({ calculateResult, result }) => {
   }
 
   return (
-    <form className="exchange" onSubmit={onSubmit}>
-      <fieldset className="exchange__template">
-        <legend className="exchange__header">KANTOR</legend>
-        <p>
-          <label>
-            <span className="exchange__text">PLN:</span>
-            <input
-              value={amount}
-              onChange={({ target }) => setAmount(target.value)}
-              placeholder="Wpisz kwotę w złotówkach"
-              className="exchange__window"
-              required type="number"
-              min="0"
-              step="0.01"
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            <span className="exchange__text">Wybierz walutę:</span>
-            <select
-              className="exchange__window"
-              value={currency}
-              onChange={({ target }) => setCurrency(target.value)}
-            >
-              {currencies.map((currency => (
-                <option
-                  key={currency.short}
-                  value={currency.short}
-                >
-                  {currency.name}
-                </option>
-              )))}
-            </select>
-          </label>
-        </p>
-      </fieldset>
+    <form className="form" onSubmit={onSubmit}>
       <p>
-        <button className="exchange__button">Oblicz kurs</button>
+        <label className="form__label">
+          Podaj kwotę w zł:
+          <input
+            value={amount}
+            onChange={({ target }) => setAmount(target.value)}
+            placeholder="Wpisz kwotę"
+            className="exchange__window"
+            required type="number"
+            min="0"
+            step="0.01"
+          />
+        </label>
       </p>
-
-      <Result result={result} />
+      <p>
+        <label className="form__label">
+          Wybierz walutę:
+          <select
+            value={currency}
+            onChange={({ target }) => setCurrency(target.value)}
+          >
+            {currencies.map((currency => (
+              <option
+                key={currency.short}
+                value={currency.short}
+              >
+                {currency.name}
+              </option>
+            )))};
+          </select>
+        </label>
+      </p>
+      <p className="button">
+        <button className="button__specification">Oblicz!</button>
+      </p>
+        <Result result={result} />
     </form>
   )
 }
