@@ -4,7 +4,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
-[!Animation][https://github.com/sewbrzozka/currency-converter-react/blob/main/currencyConverterReact.gif]
+
+[Link - click!](https://sewbrzozka.github.io/currency-converter-react/)
+
+![Visualisation, How it works](/currencyConverterReact.gif)
 
 ## Technologies
 - HTML
