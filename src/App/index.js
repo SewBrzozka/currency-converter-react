@@ -3,6 +3,7 @@ import { Form } from './Form';
 import { Header } from './Header';
 import { Container } from "./Container";
 import { currencies } from './currencies';
+import { Clock } from './Clock';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <Container>
+      <Clock />
       <Header />
       <Form
         result={result}
