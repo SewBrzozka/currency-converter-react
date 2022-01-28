@@ -47,7 +47,7 @@ export const Form = ({ calculateResult, result }) => {
         </label>
       </p>
       <p className="button">
-        <button className="button__specification">Oblicz!</button>
+        <button className="button__specification">Przelicz!</button>
       </p>
         <Result result={result} />
     </form>
