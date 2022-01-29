@@ -21,7 +21,6 @@ export const Form = ({ calculateResult, result }) => {
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             placeholder="Wpisz kwotę"
-            className="exchange__window"
             required type="number"
             min="0"
             step="0.01"
