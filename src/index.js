@@ -8,8 +8,8 @@ import { ThemeProvider } from 'styled-components';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-  <GlobalStyle />
-  <App />
+    <GlobalStyle />
+    <App />
   </ThemeProvider>,
   document.getElementById('root')
 );
