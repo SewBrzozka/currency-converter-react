@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
+import { Label, Button, WrapperButton } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -15,7 +15,7 @@ export const Form = ({ calculateResult, result }) => {
   return (
     <form className="form" onSubmit={onSubmit}>
       <p>
-        <label className="form__label">
+        <Label>
           Podaj kwotę w zł:
           <input
             value={amount}
@@ -26,10 +26,10 @@ export const Form = ({ calculateResult, result }) => {
             min="0"
             step="0.01"
           />
-        </label>
+        </Label>
       </p>
       <p>
-        <label className="form__label">
+        <Label>
           Wybierz walutę:
           <select
             value={currency}
@@ -44,12 +44,14 @@ export const Form = ({ calculateResult, result }) => {
               </option>
             )))};
           </select>
-        </label>
+        </Label>
       </p>
-      <p className="button">
-        <button className="button__specification">Przelicz!</button>
-      </p>
-        <Result result={result} />
+      <WrapperButton>
+        <Button>
+          Przelicz!
+        </Button>
+      </WrapperButton>
+      <Result result={result} />
     </form>
   )
 }

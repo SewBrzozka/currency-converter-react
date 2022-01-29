@@ -1,5 +1,5 @@
 import { useCurrentDate } from "./useCurrentDate";
-import "./style.css";
+import { Wrapper } from "./styled";
 
 const formatDate = (date) => date.toLocaleString(undefined, {
     weekday: "long",
@@ -14,9 +14,9 @@ export const Clock = () => {
     const date = useCurrentDate();
 
     return (
-        <div className="clock">
+        <Wrapper>
             {"Dzisiaj jest "}
             {formatDate(date)}
-        </div>
+        </Wrapper>
     )
 };
