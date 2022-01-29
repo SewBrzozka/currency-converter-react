@@ -18,6 +18,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Webpack
 - Babel
 - ES6+
+- Custom hooks
+- Styled components
 
 ## Available Scripts
 
