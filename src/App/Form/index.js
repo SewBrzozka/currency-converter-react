@@ -28,7 +28,7 @@ export const Form = () => {
     event.preventDefault();
     setAmount("");
     setResult();
-    setCurrency("EUR");
+    setCurrency("USD");
   };
 
   return (
