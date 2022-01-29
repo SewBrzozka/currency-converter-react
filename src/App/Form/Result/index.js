@@ -1,3 +1,4 @@
+import { Button } from "../styled";
 import { Wrapper } from "./styled";
 
 export const Result = ({ result }) => {
@@ -10,6 +11,11 @@ export const Result = ({ result }) => {
                     <strong>
                         {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
                     </strong>
+                    <p>
+                        <Button type="reset">
+                            Wyczyść
+                        </Button>
+                    </p>
                 </>
             )}
         </Wrapper>

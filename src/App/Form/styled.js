@@ -23,6 +23,7 @@ export const Button = styled.button`
     border: none;
     box-shadow: none;
     border-radius: 8px;
+    font-size: 24px;
     margin: 15px;
     color: ${({ theme }) => theme.color.gallery};
 
@@ -33,4 +34,18 @@ export const Button = styled.button`
     &:active {
         filter: brightness(120%);
     }
+`;
+
+export const Info = styled.p`
+    color: ${({ theme }) => theme.color.emperor};
+    font-size: 10px;
+    text-align: center;
+`;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.teal};
+`;
+
+export const Failure = styled.p`
+    color: ${({ theme }) => theme.color.crimson};
 `;
